@@ -13,15 +13,15 @@ import com.swim.arn.ASN.ASN;
 public class Serial {
 	 @Id
 	 @GeneratedValue(strategy= GenerationType.IDENTITY)
-	 private String serialId;
+	 private long serialId;
 	 @ManyToOne
 	 @JoinColumn(name = "asn_number")
 	 private ASN asn;
 	 private String serialStatus;
-	public String getSerialId() {
+	public long getSerialId() {
 		return serialId;
 	}
-	public void setSerialId(String serialId) {
+	public void setSerialId(long serialId) {
 		this.serialId = serialId;
 	}
 	/*public String getAsnNumber() {

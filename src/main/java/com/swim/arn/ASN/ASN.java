@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class ASN {
 	 @Id
-	 private String asnNumber;
+	 private long asnNumber;
 	 private String vendorID;
 	 private String expectedArrivalDate;	 
 	 private String expectedArrivalTime;
@@ -22,11 +22,11 @@ public class ASN {
 		this.id = id;
 	}
 */
-	public String getAsnNumber() {
+	public long getAsnNumber() {
 		return asnNumber;
 	}
 
-	public void setAsnNumber(String asnNumber) {
+	public void setAsnNumber(long asnNumber) {
 		this.asnNumber = asnNumber;
 	}
 

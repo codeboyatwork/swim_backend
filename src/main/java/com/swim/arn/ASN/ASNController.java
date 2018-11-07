@@ -22,7 +22,7 @@ public class ASNController {
 		// @RequestParam means it is a parameter from the GET or POST request
 
 		ASN n = new ASN();
-		n.setAsnNumber(asnNumber);
+		n.setAsnNumber(Long.parseLong(asnNumber));
 		
 		userRepository.save(n);
 		return "Saved";

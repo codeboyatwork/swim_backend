@@ -64,7 +64,7 @@ public class ASNRestController {
 	 public void saveASNAgain(@RequestBody Map<String, Object> payload){
 		 System.out.println(payload);
 		 ASN asn = new ASN();
-		 asn.setAsnNumber(payload.get("asn").toString());
+		 asn.setAsnNumber(Long.parseLong(payload.get("asn").toString()));
 		 asn.setVendorID(payload.get("vendorId").toString());
 		 asn.setExpectedArrivalDate(payload.get("expectedArrivalDate").toString());
 		 asn.setExpectedArrivalTime(payload.get("expectedArrivalTime").toString());
